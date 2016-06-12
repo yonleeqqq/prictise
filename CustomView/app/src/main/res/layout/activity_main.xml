@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom = "http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.itheima.customview.MainActivity">
+    <RelativeLayout
+        android:id="@+id/viewPlayer"
+        android:layout_width="match_parent"
+        android:layout_height="160dp">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <LinearLayout
+            android:background="#66000000"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:gravity="center_horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                android:id="@+id/tv_desc"
+                android:textColor="@android:color/white"
+                android:singleLine="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:id="@+id/ll_point_container"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_level1"
+        android:background="@drawable/level1"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="100dp"
+        android:layout_height="50dp">
+        <ImageButton
+            android:id="@+id/ib_home"
+            android:src="@drawable/icon_home"
+            android:background="@null"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_level2"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/level2"
+        android:layout_width="180dp"
+        android:layout_height="90dp">
+        <ImageButton
+            android:id="@+id/ib_menu"
+            android:src="@drawable/icon_menu"
+            android:background="@null"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageButton
+            android:id="@+id/ib_search"
+            android:src="@drawable/icon_search"
+            android:background="@null"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageButton
+            android:id="@+id/ib_myyouku"
+            android:src="@drawable/icon_myyouku"
+            android:background="@null"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_level3"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/level3"
+        android:layout_width="280dp"
+        android:layout_height="140dp">
+        <ImageButton
+            android:src="@drawable/channel1"
+            android:background="@null"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageButton
+            android:src="@drawable/channel2"
+            android:background="@null"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="55dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageButton
+            android:src="@drawable/channel3"
+            android:background="@null"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageButton
+            android:src="@drawable/channel4"
+            android:background="@null"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageButton
+            android:src="@drawable/channel5"
+            android:background="@null"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageButton
+            android:src="@drawable/channel6"
+            android:background="@null"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="35dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageButton
+            android:src="@drawable/channel7"
+            android:background="@null"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/dropdown"
+        android:padding="5dp"
+        android:layout_width="200dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewPlayer"
+        android:layout_centerHorizontal="true">
+        <EditText
+            android:id="@+id/et_input"
+            android:background="@drawable/et_bg"
+            android:layout_width="match_parent"
+            android:layout_height="36dp" />
+        <ImageButton
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/down_arrow"
+            android:id="@+id/ib_dropdown"
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <com.itheima.customview.view.ToggleView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        custom:switch_background="@drawable/switch_background"
+        custom:switch_button="@drawable/slide_button"
+        custom:switch_state="false"
+        android:id="@+id/toggleView"
+        android:layout_above="@+id/rl_level3"
+        android:layout_alignLeft="@+id/dropdown"
+        android:layout_alignStart="@+id/dropdown" />
+
+</RelativeLayout>
